@@ -1,0 +1,191 @@
+/* Reset some basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* Header styling */
+header {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.header-content h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#select-location {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#select-location:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Main styling */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Map styling */
+#map {
+  width: 100%;
+  height: 60vh;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#location-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styling */
+label{
+  margin-bottom: 20px;
+}
+#destination {
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+#destination:focus {
+  border-color: red;
+  outline: none;
+}
+
+/* Destination list styling */
+#destination-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#destination-list li {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#destination-list li:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Button styling */
+#search-bus {
+  background-color: red;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+#search-bus:hover {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+/* Footer styling */
+footer {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  #map {
+    height: 50vh;
+  }
+
+  #location-info {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  #destination {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  #search-bus {
+    padding: 12px 20px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1.5em;
+  }
+
+  .header-content h1 {
+    font-size: 1.5em;
+  }
+
+  #destination {
+    font-size: 1em;
+  }
+
+  #search-bus {
+    padding: 10px 15px;
+    font-size: 1em;
+  }
+}
